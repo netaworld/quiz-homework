@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QuizTest</title>
+    <lint href="Assets/style.css"></lint>
+
+
+
+</head>
+<body>
+    
+
+
+    <h1 style="text-align:center;">
+<div id="container">
+    <div id="star"> Let's Begin Quiz Test</h1>
+        
+<br>
+<h>
+<p style="text-align:center;">
+    This is multiple choise test. You will see timer on side.
+    <br> 
+    For every incorrect answerd question you will loose 15 seconds</p>
+    <br>
+    <p style="text-align:center;">Best of Luck!</p>
+</h>
+<button id="startButton">Click to start</button>
+    </div>
+     
+
+    <div id="quiz" style ="display : none;">
+    </div>
+<div id="scoreContainer" style="display : none "> View Highest Score! </div>
+<div class="points"></div>
+
+
+<div id="container">
+   <p id= "highScore"></p>
+
+<p id="timer"></p>
+
+</div>
+<div id="questions">
+<p>Question</p>
+
+</div>
+<div id="choices">
+<div class="choise"id="A" onclick="checkAnswer('A')">A</div>
+<div class="choise"id="B" onclick="checkAnswer('A')">B</div>
+<div class="choise"id="C" onclick="checkAnswer('A')">C</div>
+
+
+
+</div>
+
+
+
+
+<script src="Assets/question.js"></script>
+
+<script src="Assets/script.js"></script>
+
+
+
+
+        
+        
+        </script>
+
+</body>
+</html>
