@@ -1,50 +1,14 @@
-.wrapper {
-    width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-
-  h1, p { 
-    text-align: center;
-}
-
-
 body {
   background-color: lightgray;
-  text-align: center;
 }
-
-
-/*guestion is black for the test */
-
-title {
-  color: black;
-  text-align:center
-}
-
-
 /*answers  for the test are purple//
 //<p class="round3">Roundest border</p>*/
 
-
-.choise {
+/*.choise {
   color: purple;
   text-align: center;
  border: 2px purple;
-    border-radius: 12px;
-  
-}
-/* timer should be located on top right corner*/
-timer{
-  text-align: left;
-
-}
-/*button for "click to start" should be located in center under the paragraph */
-button{
-  text-align: center;
-
-}
+    border-radius: 12px;*/
 
 
 /* high score box should be located on top left corner*/

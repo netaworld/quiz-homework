@@ -1,4 +1,80 @@
-<!DOCTYPE html>
+<!-- we got it from Bootstrap as a starter//-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Quiz Game</title>
+
+    
+  </head>
+  <body>
+      <!-- we add the top which we will adjust to right places-->
+        <nav class="p-2 mb-3 bg-light">
+                <a href="high-score.html">View High Scores</a>
+                <span class="float-right">Time: 0</span>
+            </nav>
+<!-- centered h1 so it would look nicly in center by using bootstrap-layout-grid //-->
+<!--Start screen-->
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-8 text-center"></div>
+                  <h1>Let's Begin Quiz Test</h1>
+                  <p>
+                        This is multiple choise test. You will see timer on side.
+                        For every incorrect answered question you will loose 15 seconds
+                
+                        Best of Luck!
+                        
+                  </p>
+                  <!--Ha! I already had id for button-->
+                  <button id="start-button" class="btn btn-primary">Click to start</button>
+
+
+              </div>
+          </div>  
+<!--Questions and answers--> <!--also we adjust this part--><!--bootstrap-utilities-dispaly-->
+<div class="container d-none">
+        <div class="row justify-coter-center">
+            <div class="col-8"></div>
+           <h3>Question</h3>
+           <ul>
+               <li></li>
+               <li></li>
+               <li></li>
+
+
+           </ul>
+
+
+        </div>
+    </div>  
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--they are here so the start button could work-->
+    <script src="question.js"></script>
+    <script scr="script.js"></script>
+
+  </body>
+</html>
+
+
+
+
+
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,18 +82,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>QuizTest</title>
     <lint href="Assets/style.css"></lint>
-
-
-
 </head>
 <body>
-    
-
-
+        
     <h1 style="text-align:center;">
 <div id="container">
-    <div id="star"> Let's Begin Quiz Test</h1>
-        
+    <div id="star"> Let's Begin Quiz Test</h1>       
 <br>
 <h>
 <p style="text-align:center;">
@@ -30,13 +100,10 @@
 <button id="startButton">Click to start</button>
     </div>
      
-
     <div id="quiz" style ="display : none;">
     </div>
 <div id="scoreContainer" style="display : none "> View Highest Score! </div>
 <div class="points"></div>
-
-
 <div id="container">
    <p id= "highScore"></p>
 
@@ -51,24 +118,11 @@
 <div class="choise"id="A" onclick="checkAnswer('A')">A</div>
 <div class="choise"id="B" onclick="checkAnswer('A')">B</div>
 <div class="choise"id="C" onclick="checkAnswer('A')">C</div>
-
-
-
 </div>
-
-
-
-
 <script src="Assets/question.js"></script>
 
-<script src="Assets/script.js"></script>
-
-
-
-
-        
-        
+<script src="Assets/script.js"></script> 
         </script>
 
 </body>
-</html>
+</html>-->

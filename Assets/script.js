@@ -1,3 +1,11 @@
+var startBtn = document.getElementById("start-button");
+
+startBtn.addEventListener("click", function(event){
+
+});
+
+
+
 var timeleft =75;
 var timer = document.getElementById("timer");
 timer.textContent = timeleft;
@@ -66,3 +74,4 @@ addButton.addEventListener("click", function() {
     count++;
     setCounterText();
   });
+
