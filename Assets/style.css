@@ -1,6 +1,11 @@
 body {
   background-color: lightgray;
 }
+
+#start-button{
+  display: block;
+  margin: 0 100px 0 100px;
+}
 /*answers  for the test are purple//
 //<p class="round3">Roundest border</p>*/
 

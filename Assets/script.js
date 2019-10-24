@@ -1,11 +1,111 @@
 var startBtn = document.getElementById("start-button");
+var questionHeading = document.getElementById("question");
+var answersList = document.getElementById("answers");
+var questionNumber = 0;
+var choises;
 
 startBtn.addEventListener("click", function(event){
-
+    console.log("start button works")
+    document.getElementById("start-screen").classList.add("d-none");
+    document.getElementById("qa-screen").classList.remove("d-none");
 });
 
+function nextQuestion() {
+    question++
+    answersList.innerHTML ="";
+    questionHeading.textContent ="";
+    questionHeading.textContent = Questions[questionNumber].title;
+    choises = Questions[questionNumber].choices;
+
+    for (var i=0; i < choises.length; i++){
+        var newChoice = document.createElement("div");
+        newChoice.textContent = choises[i];
+        answersList.appendChild(newChoice);
+    }
+}
+
+function startGame(){
+    //if last question, grade results
+    if (questionNumber === 10) {
+        //grade quiz
+    } else {
+        nextQuestion()
+    }
+
+}
 
 
+
+
+
+// this is loop//
+// questionHeading.textContent = Questions[0].title;
+
+// answersList.innerHTML ="";
+// var choises=Questions[0].choices;
+// for (var i=0; i < choises.length; i++){
+//     var newChoice = document.createElement("div");
+//     newChoice.textContent = choises[i];
+//     answersList.appendChild(newChoice);
+// }
+// var choises=Questions[1].choices;
+// for (var i=0; i < choises.length; i++){
+//     var newChoice = document.createElement("div");
+//     newChoice.textContent = choises[i];
+//     answersList.appendChild(newChoice);
+// }
+// var choises=Questions[2].choices;
+// for (var i=0; i < choises.length; i++){
+//     var newChoice = document.createElement("div");
+//     newChoice.textContent = choises[i];
+//     answersList.appendChild(newChoice);
+// }
+// var choises=Questions[3].choices;
+// for (var i=0; i < choises.length; i++){
+//     var newChoice = document.createElement("div");
+//     newChoice.textContent = choises[i];
+//     answersList.appendChild(newChoice);
+// }
+// var choises=Questions[4].choices;
+// for (var i=0; i < choises.length; i++){
+//     var newChoice = document.createElement("div");
+//     newChoice.textContent = choises[i];
+//     answersList.appendChild(newChoice);
+// }
+// var choises=Questions[5].choices;
+// for (var i=0; i < choises.length; i++){
+//     var newChoice = document.createElement("div");
+//     newChoice.textContent = choises[i];
+//     answersList.appendChild(newChoice);
+// }
+
+// var choises=Questions[6].choices;
+// for (var i=0; i < choises.length; i++){
+//     var newChoice = document.createElement("div");
+//     newChoice.textContent = choises[i];
+//     answersList.appendChild(newChoice);
+// }
+// var choises=Questions[7].choices;
+// for (var i=0; i < choises.length; i++){
+//     var newChoice = document.createElement("div");
+//     newChoice.textContent = choises[i];
+//     answersList.appendChild(newChoice);
+// }
+// var choises=Questions[8].choices;
+// for (var i=0; i < choises.length; i++){
+//     var newChoice = document.createElement("div");
+//     newChoice.textContent = choises[i];
+//     answersList.appendChild(newChoice);
+// }
+// var choises=Questions[9].choices;
+// for (var i=0; i < choises.length; i++){
+//     var newChoice = document.createElement("div");
+//     newChoice.textContent = choises[i];
+//     answersList.appendChild(newChoice);
+// }
+
+
+// timer//
 var timeleft =75;
 var timer = document.getElementById("timer");
 timer.textContent = timeleft;
@@ -23,7 +123,7 @@ console.log("here")
 
 setInterval(timeIt, 1000);
 // needs to be updated//
-if(choise === true){
+if(x === true){
     timer.textContent = timeleft;
 
 } else {
@@ -47,7 +147,7 @@ function restart(){
 
 //for right or wrong answers Alerts should show //
 
- if(choise === true){
+ if(answer === true){
      alert = "Correct"
  } else{
 alert = "Sorry, wrong!"
@@ -74,4 +174,9 @@ addButton.addEventListener("click", function() {
     count++;
     setCounterText();
   });
+
+// store test results//
+
+
+
 
