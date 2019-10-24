@@ -38,7 +38,7 @@
           incorrect answered question you will loose 15 seconds Best of Luck!
         </p>
         <!--Ha! I already had id for button-->
-        <button id="start-button" class="btn btn-primary" onClick="startGame()">
+        <button id="start-button" class="btn btn-primary" onClick="nextQuestion()">
           Click to start
         </button>
       </div>
@@ -50,12 +50,14 @@
       <div class="row justify-content-center">
         <div class="col-8"></div>
         <h3 id="question">Question</h3>
-        <ul id="answers">
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-        </ul>
+        <select id="answers">
+          <option value="0" id="0"></option>
+          <option value="1" id="1"></option>
+          <option value="2" id="2"></option>
+          <option value="3" id="3"></option>
+        </select>
       </div>
+      <button onClick="nextQuestion()">Next Question</button>
     </div>
 
     <!-- Optional JavaScript -->
